@@ -73,8 +73,11 @@ body {
 
 /* Hero */
 
-.hero-title {
+.hero{
     background: var(--secondary-bg-color);
+}
+
+.hero-title {
     color: var(--btn-white-color);
             
     font-weight: 900;
