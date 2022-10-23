@@ -4,11 +4,15 @@
     --accent-color: #2196F3;
     --btn-white-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
+    --bg-color-active: #188CE8;
+    --black-color: #000000;
+    --team-bg-color: #F5F4FA;
+    --rgba-color-add: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #F5F5F5;
+    background: var(--btn-white-color);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
 }
@@ -33,7 +37,7 @@ body {
     color: var(--accent-color)
 }
 .second-part {
-    color: #000000;
+    color: var(--black-color);
 }
 
 .site-nav .item {
@@ -69,7 +73,7 @@ body {
 
 /* Hero */
 
-.hero {
+.hero-title {
     background: var(--secondary-bg-color);
     color: var(--btn-white-color);
             
@@ -84,12 +88,18 @@ body {
 
 .button{
     font-family: inherit;
+    background: var(--secondary-bg-color);
     cursor: pointer;
+}
+
+.button:hover,
+.button:focus{
+    color: var(--bg-color-active);
 }
 
 .button-primary{
     color: var(--btn-white-color);
-    background-color: var(--accent-color);
+    background: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -137,7 +147,11 @@ body {
 /* Team */
 
 .team{
-    background: #F5F4FA;
+    background: var(--team-bg-color)
+}
+
+.team-list{
+    background-color: var(--btn-white-color)
 }
 
 .team-user{
@@ -172,7 +186,7 @@ body {
 }
 
 .list-item{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--rgba-color-add)
 }
 
 /* Портфоліо */
@@ -180,7 +194,7 @@ body {
 .button-secondary {
     font-family: inherit;
     color: var(--title-text-color);
-    background: #F5F4FA;
+    background: var(--team-bg-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -204,4 +218,6 @@ body {
     font-size: 16px;
     line-height: 1.88;
 }
+
+
 
