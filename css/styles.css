@@ -75,6 +75,7 @@ body {
 
 .hero{
     background: var(--secondary-bg-color);
+    text-align: center;
 }
 
 .hero-title {
@@ -83,7 +84,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
 }
 
@@ -97,7 +98,8 @@ body {
 
 .button:hover,
 .button:focus{
-    color: var(--bg-color-active);
+    background-color: var(--bg-color-active);
+    color: var(--btn-white-color);
 }
 
 .button-primary{
@@ -150,11 +152,11 @@ body {
 /* Team */
 
 .team{
-    background: var(--team-bg-color)
+    background: var(--team-bg-color);
 }
 
-.team-list{
-    background-color: var(--btn-white-color)
+.team-list > .list-item {
+    background-color: var(--btn-white-color);
 }
 
 .team-user{
@@ -188,7 +190,7 @@ body {
     line-height: 1.71;
 }
 
-.list-item{
+.address-list .list-item{
     color: var(--rgba-color-add)
 }
 
@@ -206,7 +208,8 @@ body {
 
 .button-secondary:hover,
 .button-secondary:focus{
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--btn-white-color);
 }
 
 .card-title{
